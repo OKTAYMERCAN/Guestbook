@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+	<head>
+		<meta charset="utf-8"/>
+		<title>OKTAY MERCAN FORUM</title>
+		<meta name="description" content="Oktay Mercan's forum.">
+		<link rel="stylesheet" href="forum.css">
+		
+		<script>
+			function yaz() {
+				if (document.getElementById('form').style.display == 'block'){
+					document.getElementById('form').style.display ='none';
+				}
+				else {
+					document.getElementById('form').style.display='block';
+				}
+			}
+		</script>
+		
+	</head>
+
+	<body>
+		<nav id="nav">
+		
+			<ol><li><h3>OKTAY MERCAN</h3></li></ol>
+			<ul><li><a href="#">Login</a></li></ul>
+			
+		</nav>
+		
+		<h1>Konular-Threads</h1>
+		<button onclick="javascript:yaz();" id="ekle"><h3>Create Message</h3></button><br><br>
+		
+		<div id="form">
+		
+			<div id="formtitle"><h2>Create new threads</h2></div>
+			<form style="text-align:Center;" action="send.php" method="get">
+				<input type="text" name="title" placeholder="Title/Başlık" size="75" required><br>
+				<input type="text" name="section" placeholder="Subject/Konu" size="75" required><br>
+				<input type="text" name="content" placeholder="Message/Mesaj" size="75" required><br>
+				<br>
+				<button type="submit" name="submit"><b>Submit<b></button><br>
+				<br>
+			</form>
+			
+		</div>
+		<br>
+	</body>
+
+		<div class="out">
+			<div class="in"><h3>Deneme başlık</h3><br><br><span id="date">13.10.2020 22:43:51</span><span id="konu">Deneme konunun ne olduğu</span></div>
+			<p>
+				<a target="blank" href="https://www.Youtube.com/OKTAYMERCAN">Youtube.com/OKTAYMERCAN</a><br>
+				<a target="blank" href="https://oktaymercan.com">OKTAYMERCAN.COM</a><br>
+			</p>
+			
+			<br>
+		</div><br>
+</html>
